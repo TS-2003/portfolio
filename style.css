@@ -1,4 +1,6 @@
-> Tapaswini Satapathy:
+
+
+
 :root{
     --main-color: #00FFFF;
     --black:#13131a;
@@ -10,7 +12,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Oswald', sans-serif;
+    /* font-family: 'Inconsolata', monospace; */
+font-family: 'Quicksand', sans-serif;
   }
   html{
     font-size: 62.5%;
@@ -41,22 +44,28 @@
   .header .navbar a{
     margin:0 3rem;
     font-size: 1.6rem;
-    color: var(--ref);
+    color: wheat;
     text-decoration: none;
+    transition: all .5s ease;
     font-weight: 500;
   }
   
   .header .navbar a:hover{
-    color: var(--main-color);
+    color: black;
+    background-color: rgb(70, 122, 225);
     border-bottom: .1rem solid var(--main-color);
     padding-bottom: .5rem;
+    box-shadow: 0 0 10px rgb(99, 128, 244);
   }
   .Logo{
     font-size: 4rem;
     color: var(--main-color);
     text-decoration: none;
     font-weight: 700;
+    text-shadow: 0 10px 20px rgb(227, 10, 10);
+    
   }
+  
   
   /* Home */
   .home{
@@ -75,7 +84,12 @@
   .home .content h1{
     font-size: 6rem;
     text-transform: uppercase;
-    color:var(--bg);
+   /* color:wheat; */
+    /* color: linear-gradient(to right, #ff8a00 0%, #dd4c4f 100%); */
+    background: linear-gradient(to top, rgb(42, 125, 227), rgb(203, 52, 208));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
   }
   .about .row{
     display: flex;
@@ -120,7 +134,7 @@
     padding:1rem 0;
     line-height: 1.8;
   }
-  /Projects/
+  /*Projects*/
   .projects .heading{
     font-size: 6rem;
     text-transform: uppercase;
@@ -152,6 +166,7 @@
   
   .projects .box-container .box:hover .image img{
     transform: scale(1.2);
+    transition: all .5s ease
   }
   
   .projects .box-container .box .content{
@@ -195,7 +210,7 @@
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
-    transition: background-color 0.3s;
+    transition: all .5s ease;
   }
   #resume h2{
     font-size: 6rem;
@@ -209,13 +224,14 @@
     color:var(--ref);
     padding:1rem 0;
     line-height: 1.8;
+    transition: all .5s ease;
   }
-
-> Tapaswini Satapathy:
-#resume a:hover {
-    background-color: var(--main-color);
+  
+  #resume a:hover {
+     background: linear-gradient(to top, rgb(42, 125, 227), rgb(203, 52, 208));
+     transition: all .5s ease;
   }
-  /* Contact details */
+  /*Contact details*/
   #contact h2{
     font-size: 6rem;
     text-transform: uppercase;
@@ -229,7 +245,7 @@
     padding:1rem 0;
     line-height: 1.8;
   }
-  /*Footer */
+  /*Footer*/
   footer{
     background: var(--black);
     height: auto;
